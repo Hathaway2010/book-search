@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="byronic-heroes.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+    <h1 id="title">Which Byronic Hero Are You?</h1>
+    <p id="description">Answer these questions and find out! NOTE: THIS QUIZ DOES NOT WORK YET. I AM WORKING ON IT.</p>
+    <form id="survey-form">
+      <div class="question virtues">
+      <legend>What are your best qualities?</legend><br>
+      <input type="radio" id="passing-honest" data-hero="Hamlet" data-stats="2013" name="virtues" class="virtues">
+      <label for="passing-honest">I am passing honest and understand my opponents too well to be manipulated.  They say in better times I was the glass of fashion and the mold of form.</label><br>
+        <input type="radio" id="angelic-nobility" data-hero="Satan" data-stats="2113" name="virtues" class="virtues">
+      <label for="angelic-nobility">I retain angelic nobility; I hold it base cowardice to submit even to an unconquerable enemy.</label><br>
+      <input type="radio" id="spiritual-nature" data-hero="Manfred" data-stats="3000" name="virtues" class="virtues">
+      <label for="spiritual-nature">I possess some of the best qualities of mankind.  I have a more spiritual nature than most.</label><br>
+      <input type="radio" id="witty-irresistible" data-hero="Pechorin" data-stats="1003" name="virtues" class="virtues">
+      <label for="witty-irresistible">I am bitingly witty, irresistible, and have an excellent understanding of human nature.</label><br>
+      <input type="radio" id="courteous-tactician" data-hero="Dracula" data-stats="1103" name="virtues" class="virtues">
+      <label for="courteous-tactician">I am an implacable opponent in war, a tactical genius, and I have excellent manners even when I'm about to kill you.  People are attracted to me even though I disgust them.</label><br>
+      <input type="radio" id="eloquent-loving-heart" data-hero="Frankensteins-monster" data-stats="2031" name="virtues" class="virtues">
+      <label for="eloquent-loving-heart"> My speech is eloquent, my mind apt, and I would be capable of the deepest natural love if it were not for the constant rejection I have met with.</label><br>
+      <input type="radio" id="unyielding-loyal" data-hero="Heathcliff" data-stats="3102" name="virtues" class="virtues">
+      <label for="unyielding-loyal"> I never waver in my purpose.  I would never hurt the one I love.  I can bear anything stoically.  I clean up surprisingly well.</label><br>
+      <input type="radio" id="loving-handsome" data-hero="Edward" data-stats="3003" name="virtues" class="virtues">
+      <label for="loving-handsome"> I am educated, principled, loving, and exceedingly handsome.</label><br>
+      <input type="radio" id="cosmopolitan-passionate" data-hero="Byron" data-stats="1103" name="virtues" class="virtues">
+      <label for="cosmopolitan-passionate">I am well traveled, women can't get enough of me, I am passionate about my political convictions.</label><br>
+    </div>
+    <div class="question vices">
+    <legend>What are your worst faults?</legend><br>
+    <input type="radio" id="arrogant-unforgiving" data-hero="Hamlet" data-stats="1230" name="vices" class="vices">
+    <label for="arrogant-unforgiving">There are so many it would be better if I hadn't been born.  For example, I am arrogant and unforgiving.  And at the same time I can't bring myself to commit the act of vengeance that any half-decent person would in my place.</label><br>
+    <input type="radio" id="hell-within" data-hero="Satan" data-stats="1132" name="vices" class="vices">
+    <label for="hell-within">I cannot escape the hell within me, I have been horribly degraded, sometimes I have to turn into a snake, and I am too proud to be content with perfect happiness if I am not free.</label><br>
+    <input type="radio" id="sick-of-life" data-hero="Manfred" data-stats="1130" name="vices" class="vices">
+    <label for="sick-of-life">I am sick of life but too cowardly to kill myself, I am cursed to be an evil, miserable, serpentine deceiver, and my true love died because of me
+  </label><br>
+    <input type="radio" id="cruel-cold" data-hero="Pechorin" data-stats="1223"name="vices" class="vices">
+    <label for="cruel-cold">I am cruel, cold, and SO BORED, I break hearts right and left, I can be perverse, mystifying, and irrational, and my married lover thinks I am the unhappiest of humankind
+  </label><br>
+    <input type="radio" id="evil" data-hero="Dracula" data-stats="0300" name="vices" class="vices">
+    <label for="evil">I am EVIL.  Apparently I am unoriginal, repetitive, and childish like all criminals.  My breath stinks.</label><br>
+    <input type="radio" id="unstoppable-murderer" data-hero="Frankensteins-monster" data-stats="1330" name="vices" class="vices">
+    <label for="unstoppable-murderer">  I am an unstoppable murderer, tormented by my crimes but driven to them by rage against the one who made me repulsive to everyone around me.
+  </label><br>
+    <input type="radio" id="vengeful-sadistic" data-hero="Heathcliff" data-stats="0301" name="vices" class="vices">
+    <label for="vengeful-sadistic"> I am vengeful and sadistic.  I hang cute animals.  I wrecked my true love's marriage and indirectly caused her death.</label><br>
+    <input type="radio" id="arrogant-stalker" data-hero="Edward" data-stats="1202" name="vices" class="vices">
+    <label for=arrogant-stalker> I am too arrogant and my devotion sometimes veers into stalkerdom.</label><br>
+    <input type="radio" id="insecure-abusive" data-hero="Byron" data-stats="1221" name="vices" class="vices">
+    <label for=insecure-abusive>I'm insecure about my physical appearance; I can mistreat my partners.</label><br>
+  </div>
+  <div class="question intolerable">
+    <legend>What do you find intolerable about the world?</legend><br>
+    <input type="radio" id="dishonest-fools" data-hero="Hamlet" data-stats="2111" name="intolerable" class="intolerable">
+    <label for="dishonest-fools">Fools who try to manipulate me.</label><br>
+    <input type="radio" id="slavery" data-hero="Satan" data-stats="2112" name="intolerable" class="intolerable">
+    <label for="slavery">The state of slavery in which we all live.</label><br>
+    <input type="radio" id="no-peace" data-hero="Manfred" data-stats="1231" name="intolerable" class="intolerable">
+    <label for="no-peace">Most people's inability to comprehend me, the fact that no amount of power can bring me peace.
+  </label><br>
+    <input type="radio" id="pretentious-fools" data-hero="Pechorin" data-stats="0221" name="intolerable" class="intolerable">
+    <label for="pretentious-fools">Pretentious fools.  The way  nothing holds my interest
+  </label><br>
+    <input type="radio" id="thwarting-me" data-hero="Dracula" data-stats="0300" name="intolerable" class="intolerable">
+    <label for="thwarting-me">People's insistence on thwarting my efforts at world domination.</label><br>
+    <input type="radio" id="shallow-gaze" data-hero="Frankensteins-monster" data-stats="2131" name="intolerable" class="intolerable">
+    <label for="shallow-gaze">  People's unwillingness to look past appearances to the heart within.
+  </label><br>
+    <input type="radio" id="weaklings" data-hero="Heathcliff" data-stats="0221" name="intolerable" class="intolerable">
+    <label for="weaklings">Weaklings who humiliate me</label><br>
+    <input type="radio" id="shallow-people" data-hero="Edward" data-stats="1212" name="intolerable" class="intolerable">
+    <label for=shallow-people>Mind-numbingly shallow people.</label><br>
+    <input type="radio" id="all-of-the-above" data-hero="Byron" data-stats="2232" name="intolerable" class="intolerable">
+    <label for="all-of-the-above">All of the above, except, perhaps world domination.</label><br>
+</div>
+<div class="question true-love">
+  <legend>So, about your true love... I know you have one.</legend><br>
+  <input type="radio" id="probably-dont" data-hero="Hamlet" data-stats="0120" name="true-love" class="true-love">
+  <label for="probably-dont">I probably don't. I don't trust anyone; I've been betrayed too often.</label><br>
+  <input type="radio" id="definitely-dont" data-hero="Satan" data-stats="0001" name="true-love" class="true-love">
+  <label for="definitely-dont">Not even interested. Believe me, I have other things on my mind.</label><br>
+  <input type="radio" id="elevated-soul" data-hero="Manfred" data-stats="2221" name="true-love" class="true-love">
+  <label for="elevated-soul">They have a soul as elevated as mine, but they have the virtues I lack...
+</label><br>
+  <input type="radio" id="loves-me" data-hero="Pechorin" data-stats="0210" name="true-love" class="true-love">
+  <label for="loves-me">Well, there's someone who truly loves <em>me</em> despite knowing the very worst.  When they left, I was devastated for almost fifteen minutes.
+</label><br>
+  <input type="radio" id="unappealing-vampires" data-hero="Dracula" data-stats="0310" name="true-love" class="true-love">
+  <label for="unappealing-vampires">They aren't appealing anymore once I've, er, turned them into vampires.</label><br>
+  <input type="radio" id="if-only" data-hero="Frankensteins-monster" data-stats="1131" name="true-love" class="true-love">
+  <label for="if-only">  If only there were someone like me...
+</label><br>
+  <input type="radio" id="single-soul" data-hero="Heathcliff" data-stats="2012" name="true-love" class="true-love">
+  <label for="single-soul">What’s between us goes deeper than ordinary love; it’s as if we share a single soul.
+</label><br>
+  <input type="radio" id="selfless-destructible" data-hero="Edward" data-stats="2232" name="true-love" class="true-love">
+  <label for="selfless-destructible">She's so selfless, and she should leave me because I'm scared I'll destroy her; besides, she can't love me nearly as much as I love her.</label><br>
+  <input type="radio" id="many-scandalous" data-hero="Byron" data-stats="1122" name="true-love" class="true-love">
+  <label for="many-scandalous">There have been a number of candidates, almost all too scandalous to mention.</label><br>
+</div>
+<div class="question dark-secret">
+  <legend>What's your darkest secret?</legend><br>
+  <input type="radio" id="you-wish" data-hero="Hamlet" data-stats="1112" name="dark-secret" class="dark-secret">
+  <label for="you-wish">You think you have the ability or the right to wring my secrets from me?</label><br>
+  <input type="radio" id="passing-regret" data-hero="Satan" data-stats="1122" name="dark-secret" class="dark-secret">
+  <label for="passing-regret">I felt sort of bad about rebelling — just for a moment.</label><br>
+  <input type="radio" id="killed-love" data-hero="Manfred" data-stats="1232" name="dark-secret" class="dark-secret">
+  <label for="killed-love">My unholy ambition caused the death of my true love.
+</label><br>
+  <input type="radio" id="manipulative-heartbreaker" data-hero="Pechorin" data-stats="0311" name="dark-secret" class="dark-secret">
+  <label for="manipulative-heartbreaker"> I will break your heart.  Everything I tell you is manipulation, including this.
+</label><br>
+  <input type="radio" id="world-domination" data-hero="Dracula" data-stats="0302" name="dark-secret" class="dark-secret">
+  <label for="world-domination">I WILL CONQUER THE WORLD.</label><br>
+  <input type="radio" id="hidden-virtue" data-hero="Frankensteins-monster" data-stats="2132" name="dark-secret" class="dark-secret">
+  <label for="hidden-virtue">This shouldn't be a secret. The only reason you'd think it is is that I'm physically ugly. But I am an extraordinarily intelligent, noble, loving individual, not just a monster.</label><br>
+  <input type="radio" id="surprise-makeover" data-hero="Heathcliff" data-stats="2023" name="dark-secret" class="dark-secret">
+  <label for="surprise-makeover"> I am an extraordinarily intelligent, noble, loving individual, not just a monster, and I've proven it by getting and education and lots of money. You won't even recognize me the next time you see me. </label><br>
+  <input type="radio" id="played-god" data-hero="Edward" data-stats="2232" name="dark-secret" class="dark-secret">
+  <label for="played-god">Once I killed criminals.  Horrible criminals who deserve to die.  But I killed them.  I played God.</label><br>
+  <input type="radio" id="bi-animal-lover" data-hero="Byron" data-stats="2023" name="dark-secret" class="dark-secret">
+  <label for="bi-animal-lover">I have a surprising fondness for cute animals. I’m also probably bi.</label><br>
+</div>
+<div class="question god">
+  <legend>How do you get along with God?</legend><br>
+  <input type="radio" id="uncharitable-christian" data-hero="Hamlet" data-stats="1320" name="god" class="god">
+  <label for="uncharitable-christian">I am Christian, but sometimes short on Christian charity. I don't just want to kill my enemies, I want them to go to hell--and in theory I'm willing to defy God for vengeance.  I worry about the afterlife, though.</label><br>
+  <input type="radio" id="maltheist" data-hero="Satan" data-stats="2122" name="god" class="god">
+  <label for="maltheist">God is a tyrant. May the Fates decide between us.</label><br>
+  <input type="radio" id="despairing" data-hero="Manfred" data-stats="1231" name="god" class="god">
+  <label for="despairing">The Christian promise of redemption is just another temptation.</label><br>
+  <input type="radio" id="agnostic" data-hero="Pechorin" data-stats="2020" name="god" class="god">
+  <label for="agnostic">I make it a practice to believe nothing more than I should.
+</label><br>
+  <input type="radio" id="love-hate" data-hero="Dracula" data-stats="0302" name="god" class="god">
+  <label for="love-hate">Can't live with God, can't live without Him(?).</label><br>
+  <input type="radio" id="dont-play-god" data-hero="Frankensteins-monster" data-stats="1221" name="god" class="god">
+  <label for="dont-play-god">Hard to say, but I'm walking proof that you shouldn't <em>play</em> God.</label><br>
+  <input type="radio" id="heaven-on-earth" data-hero="Heathcliff" data-stats="1233" name="god" class="god">
+  <label for="heaven-on-earth">My true love is the only heaven I need, though in practice we are often hell to one another.
+</label><br>
+  <input type="radio" id="lost-soul" data-hero="Edward" data-stats="3032" name="god" class="god">
+  <label for="lost-soul"> He has turned his face from me; I have lost my soul.  But still I must be good.</label><br>
+  <input type="radio" id="damned-doubtful" data-hero="Byron" data-stats="2132" name="god" class="god">
+  <label for="damned-doubtful">I deny nothing, but doubt everything. I suspect I'm damned.</label><br>
+</div>
+    <div class="question motivations">
+      <legend>What motivates you?</legend>
+      <input type="checkbox" id="power" data-hero="Pechorin Dracula" data-stats="0201" class="motivations">
+      <label for="power">Power</label>
+      <input type="checkbox" id="revenge" data-hero="Hamlet Satan Frankensteins-monster Heathcliff" data-stats="0210" class="motivations">
+      <label for="revenge">Revenge</label>
+      <input type="checkbox" id="love" data-hero="Manfred Frankensteins-monster Heathcliff Edward Byron" data-stats="3010" class="motivations">
+      <label for="love">Love</label>
+      <input type="checkbox" id="blood" data-hero="Dracula Edward" data-stats="0103" class="motivations">
+      <label for="blood">Blood</label>
+      <input type="checkbox" id="self-loathing" data-hero="Hamlet Manfred Pechorin Frankensteins-monster Edward Byron" data-stats="2230" class="motivations">
+      <label for="self-loathing">Self-loathing</label>
+    </div><br>
+    <div id="info">
+      <div id="left">
+    <label for="name" id="name-label">Name:</label> <br>
+      <input id="name" type="text" placeholder="Make up a name" name="name">
+      <br>
+      <label for="number" id="number-label">Age:</label><br>
+      <input id="number" type="number" min="0" max="1000000" placeholder="0-1,000,000" name="age">
+    <br>
+    <label for="dropdown" id="dropdown-label">Species:</label><br>
+    <select id="dropdown" class="species" placeholder="human">
+      <option id="human" data-hero="Hamlet Pechorin Heathcliff Byron" data-stats="2220">Human</option>
+      <option id="depraved-human" data-hero="Manfred Dracula Heathcliff Byron" data-stats="1221">Too depraved to be human</option>
+      <option id="grandiose-human" data-hero="Satan Manfred Frankensteins-monster Edward Byron" data-stats="2212">Too spiritually elevated to be human</option>
+      <option id="vampire" data-hero="Dracula Edward" data-stats="0223">Vampire</option>
+      <option id="monster" data-hero="Satan Manfred Pechorin Dracula Frankensteins-monster Heathcliff" data-stats="1231">Monster</option>
+      <option id="fallen-angel" data-hero="Satan Manfred Pechorin Frankensteins-monster Edward" data-stats="1222">Fallen angel</option>
+    </select>
+    <label for="submit"></label><br>
+    <input type="button" name="button" value="Submit" onclick="scoreQuiz()">
+      </div>
+      <div id="result"></div>
+  </body>
+</html>
