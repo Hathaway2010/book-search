@@ -1,0 +1,23 @@
+body {
+  background-color: white;
+  font-family: sans-serif;
+  color: #080a26;
+}
+/* table styling options from W3 Schools: https://www.w3schools.com/css/css_table.asp*/
+table, th, td {
+  border: 1px solid lightgray;
+}
+th, td {
+  padding: 7px;
+}
+th {
+  background-color: #080a26;
+  color: AliceBlue;
+}
+td {
+  background-color: white;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}

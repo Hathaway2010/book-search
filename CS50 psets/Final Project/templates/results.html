@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% title block %}
+  Search Results
+{% endblock %}
+
+{% body block %}
+  <h1>Search Results</h1>
+  <p>{% len(results) %} results</p>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  {% for row in results %}
+       <tr>
+         <td> {{ row["author"]}}</td>
+         <td>{{ row["title"] }}</td>
+         <td>{{ row["in-stock"] }}</td>
+         <td>{{ row["new-used"] }}</td>
+         <td>{{ row["binding"] }}</td>
+         <td>{{ row["price"] }}</td>
+         <td>{{ row["eligible"] }}</td>
+      </tr>
+    {% endfor %}
+{% endblock %}
