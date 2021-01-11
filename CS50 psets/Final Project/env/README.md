@@ -3,8 +3,6 @@
 
 This simple book search enables a hypothetical bookstore to transform a CSV, TSV, or comparable spreadsheet document containing books' titles, authors, and prices into a SQLite database and sets up a website using Python, Flask, HTML, and CSS via which users may search the database.
 
-I developed this on my computer rather than in the CS50 IDE, so some files involved in testing my project (a Python program that queries the database and prints the full inventory and a Python program that deletes the table in the database) are not included, nor the files involved in setting up Flask in my virtual environment. To gain experience, I researched and used the sqlite3 library itself rather than the CS50 library.
-
 ##### import.py
 
 The file import.py is the means by which a bookstore can import its data, which must be formatted as a CSV, TSV, or other file in which text values are separated by special characters. At present, import.py is a command-line program; I may eventually build a GUI for it, using (perhaps) tkinter. It requires a single command-line argument in addition to the program name: the name of the CSV (or other) file to import. It then prompts the user for information about the provided spreadsheet: the name of the title field, of the author field, and of the price field, as well as the format of the author field (whether the name is formatted as `First_name Last_name` or `Last_name, First_name`) and the delimiter and quote character in the spreadsheet. From here, import.py creates or connects to a database named inventory.db, in which it creates a table called inv. It then reads the spreadsheet file row-by-row into inv, making a few alterations:
